@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>TechAndCode2</title>
+    <meta name="author" content="Ben">
+    <meta name="generator" content="BlueGriffon wysiwyg editor">
+    <link type="text/css" rel="stylesheet" href="style/BenMQ_Website_stylesheet_123020_2.css"> 
+  </head>
+<body>
+    <div class="container">
+      <div class="header" id="HeaderImg_1">
+        <div class="header" id="headerlayer1">
+          <div class="header" id="tswcsstabs">
+            <ul>
+              <b>
+                <li><a href="AboutMe.html">About</a></li>
+                <li><a href="CurrentProjects.html">Current Projects</a></li>
+                <li><a href="PastProjects.html">Past Projects</a></li>
+                <li>
+<div class="dropdown">
+                  <a class="dropdown" href="TechAndCode1.html">Tech &amp; Code</a>
+                    <div class="dropdown-content">
+                      <p style="margin:0.5em"><a href="TechAndCode1.html">DIY Electrofisher Batteries</a></p>
+                      <p style="margin:0.5em"><a href="TechAndCode2.html">Fishfinder Bathymetry</a></p>
+  										<p style="margin:0.5em"><a href="https://github.com/bmq215">Github</a></p>
+                    </div>
+                  </div></li>
+                <li><a href="Contact.html">Contact Me</a></li>
+              </b>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main1">
+      <h1 style="text-align: left; margin-left: 25%;
+                 padding-top: 10px; padding-bottom: 10px">Fish Finder Bathymetry</h1>
+      <p>Bathymetry, the underwater equivalent of topography, is an important
+        component of any aquatic research. Whether one is simply trying to
+        determine the deepest spot in a waterbody or working on something much
+        more complex, such as flow modeling, an accurate understanding of the
+        underwater terrain is required. Traditionally creating bathymetric maps
+        was an extremely time consuming process, requiring many hours of depth
+        sounding and position measurement as well as a skilled cartographer.
+        Today this is done with multibeam sonar and advanced data processing
+        that can create high resolution maps in a fraction of the time.</p>
+      <p>The equipment necessary to accomplish this, however, is specialized and
+        expensive. Since such studies usually only need to be done once they are
+        generally contracted out to specialized consulting firms. Unfortunately,
+        the high prices that such firms charge are often out of the reach of
+        smaller research and management groups.</p>
+      <p>One solution to this problem is a hybrid approach that combines the
+        traditional approach of many single-point depth soundings with modern
+        technology and statistical analyses. While not as high resolution as
+        multibeam sonar, this technique can provide accurate bathymetric maps at
+        a fraction of the cost.</p>
+      <h2>Design</h2>
+      <p>Our particular unit, a Humminbird 597ci HD, was left over from another
+        project and therefore a very cost-effective choice. While this unit
+        retails for around $400 new, a quick check online reveals that there are
+        many different fish finders compatible with this approach. The key
+        requirements are a built-in GPS, and a NMEA0183 output. Any fish finder
+        with both of those features should output the necessary data.</p>
+      <p>The data logger consists of a single circuit board that receives the
+        NMEA0183 signal, translates it into a format that can be read by an
+        onboard microcontroller, and then writes that data to a SD memory card
+        in text format. A single LED illuminated button is used to activate the
+        logger and provide feedback when recording points. Point acquisition is
+        determined by straight-line distance from the last recorded
+        point, but could alternately be based upon time, speed, surface
+        temperature, or a combination of factors. For our work the
+        microcontroller is programmed to record a point every five meters.</p>
+      <p>Both the data logger and its power source, two AA batteries, are housed
+        in a small plastic enclosure and connected to the fish finder through a
+        removable data cable (purchased from the manufacturer). This allows one
+        to disconnect the logger from the fish finder when not actively engaged
+        in mapping. While I haven’t extensively tested the battery life of the
+        unit, calculations and field observations suggest that two alkaline AA
+        batteries should be sufficient for well over 100 hours of mapping.</p>
+      <p><img src="DataLogger_Schematic_2.png" style="float: center" width="32%">
+        <img src="DataLogger_PCB.png" style="float: center" width="31%"> <img src="BathyLogger_3.jpg" style="float: center" width="29%"> </p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+</body></html>
